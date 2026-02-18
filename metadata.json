@@ -1,0 +1,9 @@
+
+{
+  "name": "Acasting Newsletter Builder",
+  "description": "An advanced, AI-powered email newsletter editor for Acasting creators, featuring drag-and-drop-like interface, real-time Gemini content generation, and professional template management.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
