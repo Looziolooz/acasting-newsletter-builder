@@ -1,4 +1,4 @@
-// Add missing React import to support React.ReactNode type in layout
+// app/layout.tsx
 import React from "react";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
@@ -18,7 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="it">
-      <body className={`${inter.variable} font-inter antialiased bg-slate-50 text-slate-900`}>
+      <body 
+        className={`${inter.variable} font-inter antialiased bg-slate-50 text-slate-900`}
+        // Questa proprietà risolve l'errore di hydration causato dalle estensioni del browser
+        suppressHydrationWarning={true}
+      >
         {children}
       </body>
     </html>
